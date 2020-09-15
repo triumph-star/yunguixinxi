@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+a {
+	text-decoration: none;
+  }
+  
+body {
+	font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+	/* background-color: #f2f2f2; */
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+	background-color: rgba(186, 204, 217, 0.5);
+}
+
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+}
+
+header {
+	width: 100%;
+	height: 30px;
+	background-color: #1A94BC;
+
+}
+
+.hello {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	width: 20%;
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 4px;
+}
+
+.hello:hover {
+	color: #B2BBBE;
+}
+
+nav {
+	float: right;
+	width: 80%;
+	height: 30px;
+	text-align: right;
+}
+
+header nav ul {
+	margin-top: 1%;
+	list-style: none;
+	float: right;
+	height: 30px;
+	margin: 0;
+}
+
+nav ul li {
+	margin: 0;
+	height: 30px;
+	width: 100px;
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+nav ul li:hover a {
+	color: #B2BBBE;
+}
+
+#logo {
+	width: 100%;
+	height: 100px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: auto 100%;
+}
+
+#cl {
+	clear: both;
+}
+
+#footer {
+	width: auto;
+}
+
+.button {
+	width: 200px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 0.1px solid rgba(0, 0, 0, 0);
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	background: url(../images/logo.png) no-repeat;
+	background-size: contain;
+}
+
+.mid {
+
+	color: rgba(0, 0, 0, 0)
+}
+
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.button a {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.button:hover a {
+	color: #f2f2f2;
+	text-decoration: none;
+
+}
+
+.tel_info {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	letter-spacing: 4px;
+	font-size: 10px;
+	font-family: "cabin-sketch";
+
+}
+
+.tel_info a {
+	color: #1A94BC;
+	text-decoration: none;
+
+}
+
+.tel_info:hover a {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.copyright {
+	font-size: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	/* letter-spacing: 1px; */
+	/* border-top-width: 2px; */
+	height: 47px;
+	line-height: 47px;
+}
+
+
+#end_text{
+	opacity: 0.5;
+}
+
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 20PX;
+	margin-bottom: 0px;
+	background: url(../images/bottom.png) no-repeat;
+	background-size: cover;
+}
+
+#buttom_icon{
+	margin: 0 auto;
+}
+
+.tel_info::after{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 96%;
+	height: 25px;
+	border-bottom: 1px solid #fff;
+	opacity: 0.3;
+
+}
+
+footer {
+	display: inline-block;
+	height: 263px;
+	width: 100%;
+	margin:0 0 0 0;
+	padding: 0;
+	border: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/* 导航栏*/
+#nav {
+	margin: 0 5% 0 0;
+	display: flex;
+	float: right;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	font-family: source-sans-pro;
+	font-weight: 200;
+	box-sizing: border-box;
+	padding-top: 2.6%;
+}
+
+#nav ul {
+	position: relative;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul li {
+	list-style: none;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+	font-weight: bold;
+}
+
+.slider {
+	width: 100px;
+	height: 40px;
+	background-color: #1A94BC;
+	border-radius: 4px;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	z-index: -1;
+	transition: all ease 0.4s;
+	animation: 2s ease-in-out waves infinite;
+}
+
+li:nth-child(1):hover~.slider {
+	left: 10px;
+
+}
+
+li:nth-child(2):hover~.slider {
+	left: 128px;
+}
+
+li:nth-child(3):hover~.slider {
+	left: 248px;
+}
+
+li:nth-child(4):hover~.slider {
+	left: 368px;
+}
+
+li:nth-child(5):hover~.slider {
+	left: 488px;
+}
+
+@keyframes waves {
+	from {
+		clip-path: polygon(0% 17%,
+				9% 10%,
+				18% 4%,
+				30% 0%,
+				43% 1%,
+				49% 4%,
+				57% 7%,
+				66% 10%,
+				78% 11%,
+				89% 11%,
+				96% 9%,
+				100% 7%,
+				100% 100%,
+				0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 4%,
+				6% 9%,
+				13% 13%,
+				23% 15%,
+				31% 16%,
+				42% 15%,
+				49% 13%,
+				61% 10%,
+				71% 5%,
+				81% 3%,
+				90% 2%,
+				100% 5%,
+				100% 100%,
+				0% 100%);
+	}
+
+	to {
+		clip-path: polygon(0% 17%,
+				9% 10%,
+				18% 4%,
+				30% 0%,
+				43% 1%,
+				49% 4%,
+				57% 7%,
+				66% 10%,
+				78% 11%,
+				89% 11%,
+				96% 9%,
+				100% 7%,
+				100% 100%,
+				0% 100%);
+	}
+}
+
+/*内容*/
+.card {
+	width: 627px;
+	height: 374px;
+	box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.18);
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.itr{
+	width: 500px;
+	height: 374px;
+	margin:20px;
+	padding-left: 10px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card:hover {
+
+	width: 627px;
+	height: 374px;
+	box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.18);
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+
+}
+.cr_1{
+	float: right;
+}
+
+.cr_3{
+	float: right;
+}
+
+.cr_5{
+	float: right;
+}
+.cr_7{
+	float: right;
+}
+.cr_2{
+	float: left;
+}
+
+.cr_4{
+	float: left;
+}
+.cr_6{
+	float: left;
+}
+.cr_8{
+	float: left;
+}
+
+/*SVG*/
+.logo_text {
+	font-family: "PingFang SC";
+	font-size: 100px;
+	fill: none;
+	stroke: url("#geekColor");
+	stroke-width: 4;
+	stroke-dasharray: 10 800;
+	stroke-dashoffset: 10;
+	animation: 3s linear 0s drawing forwards;
+	text-align: center;
+}
+/* 绘画动画 */
+@keyframes drawing {
+	to {
+		stroke-dasharray: 800;
+		stroke-dashoffset: 0;
+	}
+}

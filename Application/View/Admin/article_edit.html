@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>后台</title>
+	<link rel="stylesheet" href="Public/css/adminShow.css">
+	<script src="Public/js/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+	<div class="wrap wrap-article-edit">
+		<h1>文章管理</h1>
+		<div class="box">
+			<div class="box-title">添加/编辑文章</div>
+			<div class="box-body">
+				<form method="post" action="?c=publish&a=publishShow&p=home" enctype="multipart/form-data">
+					<table>
+						<tr>
+							<th width="80">标题：</th>
+							<td><input type="text" name="title" value=""></td>
+						</tr>
+						<tr>
+							<th>栏目:</th>
+							<td>
+								<select name="category">
+									<option value="0">新闻动态-banner</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="s-author">
+							<th>作者：</th>
+							<td><input type="text" name="author" value=""></td>
+						</tr>
+						<tr class="s-thumb">
+							<th>封面图片：</th>
+							<td>
+								<input type="file" name="cover"><span>不要上传太大</span>
+							</td>
+						</tr>
+						<tr class="s-editor">
+							<th>编辑内容：</th>
+							<td><textarea name="content"></textarea></td>
+						</tr>
+						<tr class="s-act">
+							<th></th>
+							<td><input type="submit" value="立即发布"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		CKEDITOR.config.height = 400;
+		CKEDITOR.config.width = "100%";
+		CKEDITOR.replace("content");
+	</script>
+</body>
+
+</html>

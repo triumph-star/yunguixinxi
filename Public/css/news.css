@@ -1,0 +1,597 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+a {
+  text-decoration: none;
+}
+/* #1A94BC 主色调 */
+body {
+	font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+	/* background-color: #f2f2f2; */
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+  font-weight: 200;
+  background-color:rgba(186,204,217, 0.5);
+  width: 100%;
+}
+
+#backgroundImg{
+  background: url(../images/projectBg.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  margin-left: auto;
+	margin-right: auto;
+  height: 800px;
+  width: 98%;
+  border-radius: 30px;
+  position: relative;
+}
+
+#content-left{
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  width: 23%;
+  height: 700px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(255, 246, 246);
+}
+#content-right{
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  width: 23%;
+  height: 700px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(255, 246, 246);
+}
+
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+  /* height: 1000px; */
+  
+}
+header {
+	width: 100%;
+	height: 30px;
+	background-color: #1A94BC;
+
+}
+
+.hello {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	width: 20%;
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 4px;
+}
+
+.hello:hover {
+	color: #B2BBBE;
+}
+
+nav {
+	float: right;
+	width: 80%;
+	height: 30px;
+	text-align: right;
+}
+
+header nav ul {
+	margin-top: 1%;
+	list-style: none;
+	float: right;
+	height: 30px;
+	margin: 0;
+}
+
+nav ul li {
+	margin: 0;
+	height: 30px;
+	width: 100px;
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+nav ul li:hover a {
+	color: #B2BBBE;
+}
+#logo{
+  width: 100%;
+  height: 100px;
+  background: url(../images/logo.png) no-repeat;
+  background-size:auto 100%;
+}
+#cl {
+	clear: both;
+}
+
+
+footer {
+	background: #fff;
+}
+
+.button {
+	width: 200px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 0.1px solid rgba(0, 0, 0, 0);
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	background: url(../images/logo.png) no-repeat;
+	background-size: contain;
+}
+
+.mid {
+	color: rgba(0, 0, 0, 0)
+}
+
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.button a {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.button:hover a {
+	color: #f2f2f2;
+	text-decoration: none;
+
+}
+
+.tel_info {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	letter-spacing: 4px;
+	font-size: 10px;
+	font-family: "cabin-sketch";
+
+}
+
+.tel_info a {
+	color: #1A94BC;
+	text-decoration: none;
+
+}
+
+.tel_info:hover a {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+
+.copyright {
+	font-size: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	height: 47px;
+	line-height: 47px;
+}
+
+#end_text{
+	opacity: 0.5;
+}
+
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 20PX;
+	margin-bottom: 0px;
+	background: url(../images/bottom.png) no-repeat;
+	background-size: cover;
+}
+
+#buttom_icon{
+	margin: 0 auto;
+}
+
+.tel_info::after{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 96%;
+	height: 25px;
+	border-bottom: 1px solid #fff;
+	opacity: 0.3;
+
+}
+
+footer {
+	display: inline-block;
+	height: 263px;
+	width: 100%;
+	margin:0 0 0 0;
+	padding: 0;
+	border: 0;
+}
+
+.hidden {
+	display: none;
+}
+/*中间内容 */
+#midContent{
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+#image{
+  position: relative;
+  width: 1200px;
+  height: 320px;
+  margin: 0 auto;
+  background: purple;
+}
+
+#image img{
+  display:block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+.introduction{
+  font-family: source-sans-pro;
+  position: absolute;
+  right: 6%;
+  bottom: -5px;
+  width: 360px;
+  height: 260px;
+  background:rgba(26, 148, 188, 0.5);
+  border-bottom: 5px solid rebeccapurple;
+}
+.intrUp{
+  position: relative;
+  width: 320px;
+  height: 70px;
+  margin:10px auto 0;
+  padding-top:40px;
+  color: #fff;
+  border-bottom: 0.5px solid #fff;
+}
+
+.intrUp a{
+  color: #fff;
+}
+
+.intrUp a:hover{
+  color: rebeccapurple;
+}
+
+#index_service{
+  display:block;
+  width: 120px;
+  font-size:13px;
+  margin: 0 auto 0;
+  padding:0 0 0 35px;
+}
+
+#index_headline{
+  color: #fff;
+  display: block;
+  margin: 0px auto 0;
+  padding: 0 0 0 22px;
+  width: 150px;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.intrDown{
+  color: #fff;
+  position: relative;
+  width: 320px;
+  height: 140px;
+  margin: 0 auto 10px;
+}
+
+#simpleIntroduction{
+  width: 1200px;
+  /* height: 700px; */
+  margin: 0 auto;
+}
+
+.left_headline{
+  display: block;
+  font-family: source-sans-pro;
+  font-weight: bolder;
+  font-size: 32px;
+  height: 100px;
+  line-height: 100px;
+  color:#1A94BC;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+/* 内容盒子 */
+#flexLayout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1200px;
+}
+.show_b{
+  display:flex;
+  position: relative;
+  margin:30px 10px 10px 30px ;
+  width: 240px;
+  height: 275px;
+  background: rgba(26, 148, 188, 0.5);
+
+}
+
+.rectangle {
+  stroke-width: 8px;
+  stroke: #ff6348;
+  fill: transparent;
+  stroke-dasharray: 100 500;
+  stroke-dashoffset: -372;
+}
+
+@keyframes extend {
+  to {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+  }
+}
+
+.show_b:hover .rectangle {
+  animation: 0.5s extend linear forwards;
+}
+/* 盒子图片 */
+.show_img img{
+  width: 240px;
+  height: 120px;
+}
+
+.show_b::before{
+  position: absolute;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #fff;
+  display: block;
+  left: 10%;
+  bottom: 40%;
+}
+.show_b::after{
+  position: absolute;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #fff;
+  display: block;
+  width: 80%;
+  left: 10%;
+  bottom: 30%;
+}
+.show_1::before{
+  content: "鸟瞰财贸";
+}
+.show_1::after{
+  content: "夕阳无限好,只是近黄昏";
+}
+
+.show_2::before{
+  content: "计算机应用实训室";
+}
+.show_2::after{
+  content: "计算机应用和云计算专业实训基地";
+}
+
+.show_3::before{
+  content: "三号教学楼";
+}
+.show_3::after{
+  content: "傍晚余晖,斑驳婆娑";
+}
+
+.show_4::before{
+  content: "VR影院";
+}
+.show_4::after{
+  content: "VR体验观影区";
+}
+
+.show_5::before{
+  content: "光伏实训室";
+}
+.show_5::after{
+  content: "浙江瑞亚能源科技有限公司合作";
+}
+
+.show_6::before{
+  content: "物联网实训室";
+}
+.show_6::after{
+  content: "物联网应用技术专业实训室";
+}
+
+.show_7::before{
+  content: "物联网实训室在建";
+}
+.show_7::after{
+  content: "物联网实训室人脸识别大门";
+}
+
+.show_8::before{
+  content: "阿里云实训室";
+}
+.show_8::after{
+  content: "阿里云大学高校认证中心";
+}
+/* 导航栏*/
+#nav {
+  margin: 0 5% 0 0;
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-family: source-sans-pro;
+  font-weight: 200;
+  box-sizing: border-box;
+  padding-top: 2.6%;
+}
+
+#nav ul {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ #nav ul li {
+  list-style: none;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ #nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  font-weight:bold;
+}
+
+.slider {
+  width: 100px;
+  height: 40px;
+  background-color:#1A94BC;
+  border-radius: 4px;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  z-index: -1;
+  transition: all ease 0.4s;
+  animation: 2s ease-in-out waves infinite;
+}
+
+ li:nth-child(1):hover ~ .slider {
+  left: 10px;
+  
+}
+
+ li:nth-child(2):hover ~ .slider {
+  left: 128px;
+}
+
+ li:nth-child(3):hover ~ .slider {
+  left: 248px;
+}
+
+ li:nth-child(4):hover ~ .slider {
+  left: 368px;
+}
+
+ li:nth-child(5):hover ~ .slider {
+  left: 488px;
+}
+
+@keyframes waves {
+  from {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 4%,
+      6% 9%,
+      13% 13%,
+      23% 15%,
+      31% 16%,
+      42% 15%,
+      49% 13%,
+      61% 10%,
+      71% 5%,
+      81% 3%,
+      90% 2%,
+      100% 5%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  to {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎登陆云桂信息学院！</title>
+
+  <link rel="stylesheet" href="Public/css/login.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Public/images/favicon.ico" />
+  <script src="Public/js/jquery-1.8.3.min.js"></script>
+  <script>
+    function tz() {
+      window.location.href = '?c=register&a=register&p=home';
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+    </div>
+  </header>
+
+  <svg width="0" height="0">
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="6" />
+      <!-- 该滤镜利用Perlin噪声函数创建了一个图像。它实现了人造纹理比如说云纹、大理石纹的合成  这里基频参数设为为0.01;倍频系数为6,倍频系数越大越越自然-->
+      <feDisplacementMap in="SourceGraphic" scale="100" />
+      <!--映射置换滤镜，该滤镜用来自图像中从in2到空间的像素值置换图像从in到空间的像素值 in属性标识输入的原语.SourceGraphic 该关键词表示图形元素自身将作为<filter>原语的原始输入-->
+    </filter>
+  </svg>
+  <div class="button _1">
+    <div class="back"></div>
+    <div class="container">
+      <form action="?c=login&a=login&p=home" method="post" class="login-form">
+        <h2>个人信息中心</h2>
+        <input type="text" name="username" placeholder="用户名" />
+        <input type="password" name="password" placeholder="密码" />
+        <div class="alignBox">
+          <div id="code"><img src="?c=login&a=captcha&p=home" id="captcha" width="100px" height="32px" title="点击刷新验证码" /></div><input type="text"
+            id="code_in" name="captcha"></input>
+        </div>
+        <div class="alignBox">
+          <button type="submit" class="login_bt" name="confirm" value="登录">登录</button><button type="button"
+            class="registry_bt" onclick="tz()">注册</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="cl"></div>
+  <div id="footer">
+    <div class="copyright">
+      版权所有&copy;云桂信息学院<span>|</span>地址：合肥市翡翠路900号<span>|</span>邮编：230601<span>|</span>邮箱：webmaster@afcyg.edu.cn<span>|</span>皖ICP备05065075号-1<span>|</span>皖公网安备
+      340402430047 号</div>
+  </div>
+  <script>
+    //验证码点击刷新
+    (function(){
+      var $img = $("#captcha");
+      var src = $img.attr("src");
+      $img.click(function(){
+        $img.attr("src",src); //添加随机数防止浏览器缓存图片
+      });
+    })();
+    </script>
+</body>
+
+</html>
